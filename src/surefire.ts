@@ -11,14 +11,10 @@ interface ISurefire {
   once(): ng.IPromise<FirebaseDataSnapshot>;
 }
 
-interface errorCallback {
-  (error: any): ng.IDeferred<any>;
-}
-
 interface IDeferredActionOptions {
   ref: Firebase;
-  obj?: any;
   name: string;
+  obj?: any;
 }
 
 interface ISurefireFactory {
@@ -95,7 +91,7 @@ surefireModule.factory('surefire', (surefireFactory: ISurefireFactory) => {
            obj: obj
          });
        },
-       update: (obj) => {
+       update: (obj: any) => {
          return surefireFactory.deferredAction({
            ref: mainRef,
            name: 'update',
