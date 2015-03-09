@@ -1,0 +1,27 @@
+{
+  "name": "surefire",
+  "version": "0.0.1",
+  "description": "An Angular module for a promise based version of the basic Firebase SDK.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davideast/surefire.git"
+  },
+  "keywords": [
+    "Angular",
+    "Firebase"
+  ],
+  "author": "David East",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davideast/surefire/issues"
+  },
+  "homepage": "https://github.com/davideast/surefire",
+  "devDependencies": {
+    "angular": "^1.3.14",
+    "firebase": "^2.2.2"
+  }
+}
